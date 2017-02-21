@@ -1,0 +1,223 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+    font-family: Raleway;
+}
+
+#navbar {
+	background: #3F51B5;
+	height: 70px;
+	box-shadow: 0px 2px 5px #212121;
+	border-bottom: 1.5px solid #FAFAFA;
+	font-size: +20px;
+	color: #fafafa;
+}
+
+img {
+	margin-top: 5px;
+	margin-left: 6px;
+	width: 60px;
+	height: 60px;
+}
+
+.row {
+	margin-top: 1px;
+	height: 522px;
+}
+
+#left-puzzle {
+	background: #F5F5F5;
+	position: relative;
+	height: 100%;
+	border-right: 2px solid #fafafa;
+}
+
+#right-code {
+	background: #616161;
+	height: 100%;
+    font-family: Raleway;
+}
+
+#right-code p {
+	font-size: +35px;
+	color: #EEEEEE;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+#uncode {
+	width: 250px;
+	height: 45px;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 30px;
+	outline: none;
+	text-align: center;
+	font-size: +30px;
+}
+
+#uncode:active {
+    border: 1px solid black;
+}
+
+#go {
+	background: #f44336;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	border: 2px solid #b71c1c;
+	font-size: +20px;
+	color: #fafafa;
+	outline: none;
+	transition: 0.5s;
+}
+
+#go:hover {
+	background: #43A047;
+	color: #fafafa;
+	border: 2px solid #1B5E20;
+	transition: 0.5s;
+}
+
+#bottom-footer {
+	background: #212121;
+	height: 45px;
+	bottom: 0px;
+	box-shadow: 0px -2px #bdbdbd;
+	border-top: 2px solid #fafafa;
+}
+
+#bottom-footer p {
+	color: #fafafa;
+	font-size: +18px;
+	margin-top: 10px;
+    font-family: Raleway;
+}
+
+#hero_image {
+	position: absolute;
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 20px;
+	height: 480px;
+	border: 1px solid #bdbdbd;
+	border-radius: 20px;
+}
+
+.row1 {
+	width: 600px;
+	height: 160px;
+	margin-left: 100px;
+	margin-top: 20px;
+	position: absolute;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.row2 {
+	width: 600px;
+	height: 160px;
+	margin-left: 100px;
+	margin-top: 180px;
+	position: absolute;
+}
+
+.row3 {
+	width: 600px;
+	height: 160px;
+	margin-left: 100px;
+	margin-top: 340px;
+	position: absolute;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#one {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+}
+
+#two {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 200px;
+	position: absolute;
+}
+
+#three {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 400px;
+	position: absolute;
+}
+
+#four {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+}
+
+#five {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 200px;
+	position: absolute;
+}
+
+#six {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 400px;
+	position: absolute;
+}
+
+#seven {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+}
+
+#eight {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 200px;
+	position: absolute;
+}
+
+#nine {
+	background: #212121;
+	width: 200px;
+	height: 100%;
+	margin-left: 400px;
+	position: absolute;
+}
+
+#answer_clicker {
+    margin-top: 125px;
+    background: #FF9800;
+    color: #212121;
+    font-size: +22px;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 30px;
+    border: 1px solid #C5E1A5;
+    border-radius: 20px;
+    transition: 0.3s;
+    outline: none;
+}
+
+#answer_clicker:hover {
+    background: #A5D6A7;
+    color: #212121;
+    outline: none;
+    transition: 0.3s;
+}
