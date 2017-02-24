@@ -1,58 +1,70 @@
 <html>
-	<head>
-		<title>Code-Jigsaw</title>
-		<link rel="stylesheet" href="styles/stylesheet.css">
+    <head>
+        <title>Code-Jigsaw</title>
+        <link rel="stylesheet" href="styles/stylesheet.css">
         
         <link rel="shortcut icon" href="images/codeadda-symbol.png">
         
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</head>
-	
-	<body onload="beginTime()">
-		<div id="navbar" class="container-fluid">
-			<img src="images/codeadda-symbol.png"></img>
-		</div>
-		
-		<div class="row">
-			<div id="left-puzzle" class="col-xs-8">
-				<img src="images/codeadda-symbol.png" id="hero_image">
-				<div class="row1">
-					<div id="one"></div>
-					<div id="two"></div>
-					<div id="three"></div>
-				</div>
-				
-				<div class="row2">
-					<div id="four"></div>
-					<div id="five"></div>
-					<div id="six"></div>
-				</div>
-				
-				<div class="row3">
-					<div id="seven"></div>
-					<div id="eight"></div>
-					<div id="nine"></div>
-				</div>
-			</div>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="images/codeadda-symbol.png">
+                </div>
+            </div>
+        </nav>
+        
+        <div id="content-body" class="container-fluid">
+            <div id="left-puzzle" class="col-xs-9">
+                <div class="col-xs-1"></div>
+                <div id="img-container" class="col-xs-9">
+                    <img id="hero-image" class="col-xs-9" src="images/codeadda-symbol.png">
+                </div>
+                <div class="col-xs-2"></div>
+                
+                <div id="adjuster" class="col-xs-1"></div>
+                <div id="one" class="col-xs-3"></div>
+                <div id="two" class="col-xs-3"></div>
+                <div id="three" class="col-xs-3"></div>
+                <div id="adjuster" class="col-xs-2"></div>
+                
+                <div id="adjuster" class="col-xs-1"></div>
+                <div id="four" class="col-xs-3"></div>
+                <div id="five" class="col-xs-3"></div>
+                <div id="six" class="col-xs-3"></div>
+                <div id="adjuster" class="col-xs-2"></div>
+                
+                <div id="adjuster" class="col-xs-1"></div>
+                <div id="seven" class="col-xs-3"></div>
+                <div id="eight" class="col-xs-3"></div>
+                <div id="nine" class="col-xs-3"></div>
+                <div id="adjuster" class="col-xs-2"></div>
+            </div>
             
-			<div id="right-code" class="col-xs-4">
-				<center>
-					<p>Code:</p>
-					<input type="password" id="uncode" name="unlock_code" maxlength="8"><br>
-					<button id="go">Go</button><br>
-                    <button id="answer_clicker" onclick="stopTime()">I know the answer!</button>
-				</center>
-			</div>
-		</div>
-		
-		<div id="bottom-footer" class="container-fluid">
-            <center><p>Powered by: CodeAdda ITNU</p></center>
-		</div>
-		
-		<script src="scripts/pagescript.js"></script>
-	</body>
+            <div id="right-code" class="col-xs-3">
+                <center><p>Code:</p></center>
+                <div class="col-xs-2"></div>
+                <div class="col-xs-8">
+                    <input id="uncode" type="password"><br><br>
+                    <center><button id="go" onclick="open()">Go</button></center><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <div class="col-xs-2"></div>
+                
+                <center><button id="answer">I know the answer</button></center>
+            </div>
+        </div>
+        
+        <div id="bottom-footer" class="container-fluid">
+            <center><p><b>Powered by CodeAdda, ITNU</b></p></center>
+        </div>
+    </body>
+    
+    <script src="scripts/pagescript.js"></script>
 </html>
