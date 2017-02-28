@@ -29,6 +29,8 @@ function selectRandomImage(a) {
     var num = parseInt(a);
     num = num % 10;
     
+    num = 1;
+    
     switch(num){
         case 1:
             document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
