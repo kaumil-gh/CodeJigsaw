@@ -1,6 +1,6 @@
 var d = new Date();
 var time = 0;
-var ip = "";
+var ip = "0.0.0.0";
 
 $(document).ready(function () {
     $.getJSON("http://jsonip.com/?callback=?", function (data) {
@@ -29,43 +29,41 @@ function selectRandomImage(a) {
     var num = parseInt(a);
     num = num % 10;
     
-    num = 1;
-    
     switch(num){
         case 1:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
             
         case 2:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
         
         case 3:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
             
         case 4:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
         
         case 5:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
             
         case 7:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
         
         case 8:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
             
         case 9:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
             
         case 0:
-            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            document.getElementById("hero-image").src = "../CodeJigsaw/images/img1.png";
             break;
     }
 }
