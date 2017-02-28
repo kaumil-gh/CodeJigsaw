@@ -1,1 +1,128 @@
-var _0xd560=["\x67\x65\x74\x54\x69\x6D\x65","\x6C\x6F\x67","\x57\x68\x6F\x20\x64\x6F\x20\x79\x6F\x75\x20\x74\x68\x69\x6E\x6B\x20\x74\x68\x69\x73\x20\x69\x73\x3F","\x70\x72\x6F\x6D\x70\x74","\x67\x6F","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6F\x6E\x63\x6C\x69\x63\x6B","\x76\x61\x6C\x75\x65","\x75\x6E\x63\x6F\x64\x65","\x6F\x70\x61\x63\x69\x74\x79","\x73\x74\x79\x6C\x65","\x6F\x6E\x65","\x48\x61\x72\x64\x69\x6B","\x74\x77\x6F","\x53\x61\x6D\x6B\x69\x74","\x74\x68\x72\x65\x65","\x44\x61\x72\x73\x68\x61\x6E","\x66\x6F\x75\x72","\x50\x72\x61\x74\x69\x6B","\x66\x69\x76\x65","\x53\x61\x6E\x6A\x61\x79","\x73\x69\x78","\x44\x68\x72\x75\x76\x69\x6E","\x73\x65\x76\x65\x6E","\x4B\x61\x75\x6D\x69\x6C","\x65\x69\x67\x68\x74","\x50\x6F\x6F\x6A\x61\x6E","\x6E\x69\x6E\x65","\x53\x68\x69\x76\x61\x6D","","\x6B\x65\x79\x43\x6F\x64\x65","\x63\x74\x72\x6C\x4B\x65\x79","\x73\x68\x69\x66\x74\x4B\x65\x79","\x6B\x65\x79\x64\x6F\x77\x6E","\x63\x6F\x6E\x74\x65\x78\x74\x6D\x65\x6E\x75","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x6F\x6E"];var d= new Date();var time=0;function beginTime(){time= d[_0xd560[0]]();console[_0xd560[1]](time)}function stopTime(){var d= new Date();var _0xa84ax5=d[_0xd560[0]]();console[_0xd560[1]](_0xa84ax5);var _0xa84ax6=_0xa84ax5- time;var _0xa84ax7=window[_0xd560[3]](_0xd560[2]);console[_0xd560[1]](_0xa84ax7)}var goButton=document[_0xd560[5]](_0xd560[4]);goButton[_0xd560[6]]= function open(){var _0xa84axa=document[_0xd560[5]](_0xd560[8])[_0xd560[7]];switch(_0xa84axa){case _0xd560[12]:document[_0xd560[5]](_0xd560[11])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[14]:document[_0xd560[5]](_0xd560[13])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[16]:document[_0xd560[5]](_0xd560[15])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[18]:document[_0xd560[5]](_0xd560[17])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[20]:document[_0xd560[5]](_0xd560[19])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[22]:document[_0xd560[5]](_0xd560[21])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[24]:document[_0xd560[5]](_0xd560[23])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[26]:document[_0xd560[5]](_0xd560[25])[_0xd560[10]][_0xd560[9]]= 0;break;case _0xd560[28]:document[_0xd560[5]](_0xd560[27])[_0xd560[10]][_0xd560[9]]= 0;break};document[_0xd560[5]](_0xd560[8])[_0xd560[7]]= _0xd560[29]};$(document)[_0xd560[33]](function(_0xa84axb){if(_0xa84axb[_0xd560[30]]== 123){return false}else {if(_0xa84axb[_0xd560[31]]&& _0xa84axb[_0xd560[32]]&& _0xa84axb[_0xd560[30]]== 73){return false}}});$(document)[_0xd560[36]](_0xd560[34],function(_0xa84axc){_0xa84axc[_0xd560[35]]()})
+var d = new Date();
+var time = 0;
+var ip = "";
+
+$(document).ready(function () {
+    $.getJSON("http://jsonip.com/?callback=?", function (data) {
+        console.log(data);
+        ip = (data.ip);
+        var ipArr = ip.split(".");
+        selectRandomImage(ipArr[3])
+    });
+});
+
+function beginTime(){
+    time = d.getTime();
+    console.log(time);
+}
+
+function stopTime(){
+    var d = new Date();
+    var time2 = d.getTime();
+    console.log(time2);
+    var timeTaken = time2 - time;
+    var answer = window.prompt("Who do you think this is?");
+    console.log(answer);
+}
+
+function selectRandomImage(a) {
+    var num = parseInt(a);
+    num = num % 10;
+    
+    switch(num){
+        case 1:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+            
+        case 2:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+        
+        case 3:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+            
+        case 4:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+        
+        case 5:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+            
+        case 7:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+        
+        case 8:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+            
+        case 9:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+            
+        case 0:
+            document.getElementById("hero-image").src = "../Code-Jigsaw/images/img1.png";
+            break;
+    }
+}
+
+var goButton = document.getElementById("go");
+
+goButton.onclick = function open(){
+    var unlockCode = document.getElementById("uncode").value;
+
+    switch(unlockCode){
+        case "Hardik":
+            document.getElementById("one").style.opacity = 0;
+            break;
+
+        case "Samkit":
+            document.getElementById("two").style.opacity = 0;
+            break;
+
+        case "Darshan":
+            document.getElementById("three").style.opacity = 0;
+            break;
+
+        case "Pratik":
+            document.getElementById("four").style.opacity = 0;
+            break;
+
+        case "Sanjay":
+            document.getElementById("five").style.opacity = 0;
+            break;
+
+        case "Dhruvin":
+            document.getElementById("six").style.opacity = 0;
+            break;
+
+        case "Kaumil":
+            document.getElementById("seven").style.opacity = 0;
+            break;
+
+        case "Poojan":
+            document.getElementById("eight").style.opacity = 0;
+            break;
+
+        case "Shivam":
+            document.getElementById("nine").style.opacity = 0;
+            break;
+    }
+
+    document.getElementById("uncode").value = "";
+}
+
+/*$(document).keydown(function(event){
+if(event.keyCode == 123){
+    return false;
+}
+else if (event.ctrlKey && event.shiftKey && event.keyCode == 73){        
+    return false;
+}
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});*/
